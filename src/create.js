@@ -146,6 +146,7 @@ async function createComponent({ name, scope, parentModule, parentPage = {} }) {
   }
 
   // 创建文件夹
+  console.log("111");
   await Util.createDir(component_root);
 
   // 获取文件列表

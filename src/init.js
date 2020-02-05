@@ -6,7 +6,8 @@ const ora = require("ora"); // 下载过程久的话，可以用于显示下载�
 const Log = require("./utils/log"); // 控制台输出
 
 // 初始化项目地址, 修改该地址可自定义小程序模板
-// const GIT_TEMPLATE =  ''
+const GIT_TEMPLATE =
+  "direct:https://github.com/shmilyCai/cyl-mp-cli-template#master";
 
 module.exports = function(name) {
   if (!fs.existsSync(name)) {

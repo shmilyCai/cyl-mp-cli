@@ -12,6 +12,7 @@ module.exports = {
     return new Promise(resolve => {
       fs.mkdir(src, { recursive: true }, err => {
         if (err) {
+          console.log(err);
           throw err;
         }
         return resolve();
